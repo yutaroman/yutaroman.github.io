@@ -1,0 +1,37 @@
+// フォント
+$BASE_FONT_FAMILY: 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
+$BASE_FONT_SIZE: 16px;
+$BASE_LINE_HEIGHT: 1.5;
+$FONT_SIZE10: (10px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE11: (11px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE12: (12px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE13: (13px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE14: (14px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE15: (15px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE16: (16px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE17: (17px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE18: (18px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE19: (19px / $BASE_FONT_SIZE) + rem;
+$FONT_SIZE20: (20px / $BASE_FONT_SIZE) + rem;
+
+// 配色
+$COLOR_GRAY1: #fff;
+$COLOR_GRAY2: #000;
+$COLOR_GRAY3: #e5e5e5;
+$COLOR_GRAY4: #615c57;
+$COLOR_GRAY5: #dcdbd2;
+$COLOR_GRAY6: #333;
+$COLOR_GRAY7: #807b74;
+$COLOR_GRAY8: #ecebe8;
+$COLOR_GRAY9: #ccc;
+$COLOR_GRAY10: #cccbc8;
+$COLOR_RED1: #f05184;
+$COLOR_BLUE1: #3fbadf;
+
+// アニメーション
+$BASE_TRANSTION: opacity 0.3s;
+$BASE_TRANSTION_OPACITY: 0.5;
+
+// レイアウト
+$BASE_WIDTH: 1200px;
+$SECONDARY_WIDTH: 300px;
