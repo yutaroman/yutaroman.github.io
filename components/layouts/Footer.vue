@@ -1,7 +1,7 @@
 <template>
-  <footer :class="`${this.className}`">
-    <div :class="`${this.className}__Container`">
-      <p :class="`${this.className}-Copyright`">
+  <footer :class="`${className}`">
+    <div :class="`${className}__Container`">
+      <p :class="`${className}-Copyright`">
         <small>© 2019 <router-link to="/">Yutaroman</router-link></small>
       </p>
     </div>
@@ -21,18 +21,22 @@ export default {
 <style lang="scss">
 .l-Footer {
   margin-top: 50px;
-}
-.l-Footer__Container {
-  width: $BASE_WIDTH;
-  margin: 0 auto;
-}
-.l-Footer-Copyright {
-  display: flex;
-  justify-content: center;
-  small {
-    a {
-      display: inline-block;
-      text-decoration: underline;
+  &__Container {
+    width: $BASE_WIDTH;
+    margin: 0 auto;
+  }
+  &-Copyright {
+    display: flex;
+    justify-content: center;
+    small {
+      a {
+        display: inline-block;
+        text-decoration: underline;
+        transition: $BASE_TRANSTION;
+        &:hover {
+          opacity: $BASE_TRANSTION_OPACITY;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
-  <header :class="`${this.className}`">
-    <div :class="`${this.className}__Container`">
-      <p :class="`${this.className}-Logo`">
+  <header :class="`${className}`">
+    <div :class="`${className}__Container`">
+      <p :class="`${className}-Logo`">
         <router-link to="/">{{ siteData.name }}</router-link>
       </p>
     </div>
@@ -10,7 +10,7 @@
 
 
 <script>
-import siteData from '~/site.json';
+import siteData from '~/assets/json/site.json';
 export default {
   data() {
     return {
@@ -25,15 +25,14 @@ export default {
 <style lang="scss">
 .l-Header {
   border-bottom: 2px solid $COLOR_GRAY3;
+  &__Container {
+    width: $BASE_WIDTH;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  &-Logo {
+    display: flex;
+    justify-content: center;
+  }
 }
-.l-Header__Container {
-  width: $BASE_WIDTH;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-.l-Header-Logo {
-  display: flex;
-  justify-content: center;
-}
-
 </style>

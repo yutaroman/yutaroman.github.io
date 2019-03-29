@@ -1,27 +1,27 @@
 <template>
-  <aside :class="`${this.className}`">
-    <h2 :class="`${this.className}-Heading`">Profile</h2>
-    <p :class="`${this.className}-Thumbnail`">
+  <aside :class="`${className}`">
+    <h2 :class="`${className}-Heading`">Profile</h2>
+    <p :class="`${className}-Thumbnail`">
       <img v-bind:src="siteData.thumbnail.link"
            v-bind:alt="siteData.thumbnail.alt">
     </p>
-    <p :class="`${this.className}-Name`">{{ siteData.name }}</p>
-    <ul :class="`${this.className}-Accounts`">
+    <p :class="`${className}-Name`">{{ siteData.name }}</p>
+    <ul :class="`${className}-Accounts`">
       <!-- FIXME: リストで className を bind したらエラーになる -->
       <li v-for="social in siteData.socials"
-          class="s-Profile-AccountsItem">
+          :class="`${className}-AccountsItem`">
         <router-link :to="social.link">
           <i :class="`fab fa-${social.name}-square fa-2x`"></i>
         </router-link>
       </li>
     </ul>
-    <p :class="`${this.className}-Description`">{{ siteData.description }}</p>
+    <p :class="`${className}-Description`">{{ siteData.description }}</p>
   </aside>
 </template>
 
 
 <script>
-import siteData from '~/site.json';
+import siteData from '~/assets/json/site.json';
 export default {
   data() {
     return {
@@ -49,7 +49,7 @@ export default {
     margin-top: 15px;
   }
   &-Thumbnail {
-    margin: 15px auto 0;
+    margin: 30px auto 0;
     img {
       border-radius: 10px;
     }
@@ -68,9 +68,17 @@ export default {
     &:first-child {
       margin-left: 0;
     }
+    a {
+      padding: 0 1px;
+      transition: $BASE_TRANSTION;
+      &:hover {
+        opacity: $BASE_TRANSTION_OPACITY;
+      }
+    }
   }
   &-Description {
     border-top: 1px solid $COLOR_GRAY3;
+    font-size: $FONT_SIZE14;
     margin-top: 15px;
     padding-top: 15px;
   }
