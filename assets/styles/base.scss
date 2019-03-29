@@ -3,11 +3,11 @@ html {
   height: 100%;
 }
 body {
-  background-color: $COLOR_GRAY1;
+  background-color: $COLOR_WHITE1;
   font-family: $BASE_FONT_FAMILY;
   line-height: $BASE_LINE_HEIGHT;
-  color: $COLOR_GRAY6;
-  min-width: 100%;
+  color: $COLOR_GRAY2;
+  min-width: $BASE_WIDTH;
   min-height: 100%;
   position: relative;
   margin: 0;
