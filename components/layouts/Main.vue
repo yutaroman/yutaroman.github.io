@@ -4,18 +4,24 @@
       <div :class="`${this.className}-Primary`">
         <nuxt />
       </div>
-      <!-- <div :class="`${this.className}-Secondary`">Secondary</div> -->
+      <div :class="`${this.className}-Secondary`">
+        <secondary-profile />
+      </div>
     </div>
   </main>
 </template>
 
 
 <script>
+import SecondaryProfile from '../parts/secondary/Profile.vue';
 export default {
   data() {
     return {
       className: 'l-Main',
     }
+  },
+  components: {
+    SecondaryProfile,
   }
 }
 </script>
