@@ -2,7 +2,8 @@
   <aside :class="`${this.className}`">
     <h2 :class="`${this.className}-Heading`">Profile</h2>
     <p :class="`${this.className}-Thumbnail`">
-      <img v-bind:src="siteData.thumbnail" alt="サムネイル">
+      <img v-bind:src="siteData.thumbnail.link"
+           v-bind:alt="siteData.thumbnail.alt">
     </p>
     <p :class="`${this.className}-Name`">{{ siteData.name }}</p>
     <ul :class="`${this.className}-Accounts`">

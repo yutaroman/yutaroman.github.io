@@ -2,7 +2,7 @@
   <header :class="`${this.className}`">
     <div :class="`${this.className}__Container`">
       <p :class="`${this.className}-Logo`">
-        <router-link to="/">Yutaroman</router-link>
+        <router-link to="/">{{ siteData.name }}</router-link>
       </p>
     </div>
   </header>
@@ -10,10 +10,12 @@
 
 
 <script>
+import siteData from '~/site.json';
 export default {
   data() {
     return {
       className: 'l-Header',
+      siteData,
     }
   }
 }

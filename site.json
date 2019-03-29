@@ -1,7 +1,10 @@
 {
   "name": "Yutaroman",
   "description": "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
-  "thumbnail": "https://picsum.photos/150/150",
+  "thumbnail": {
+    "link": "https://picsum.photos/150/150",
+    "alt": "サムネイル"
+  },
   "socials": [
     {
       "name": "github",
