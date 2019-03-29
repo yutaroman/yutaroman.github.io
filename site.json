@@ -1,0 +1,19 @@
+{
+  "name": "Yutaroman",
+  "description": "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
+  "thumbnail": "https://picsum.photos/150/150",
+  "socials": [
+    {
+      "name": "github",
+      "link": "https://github.com/yutaroman"
+    },
+    {
+      "name": "twitter",
+      "link": "https://twitter.com/yutaroman_"
+    },
+    {
+      "name": "facebook",
+      "link": "https://www.facebook.com/profile.php?id=100002064618619"
+    }
+  ]
+}
